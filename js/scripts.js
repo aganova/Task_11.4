@@ -31,7 +31,7 @@ var nokia5 = new Phone("Nokia", "black", 780, 0.3, 0);
 var huaweiP10 = new Phone("Huawei", "silver", 1750, 0.5, 50);
 var iPhoneX = new Phone("Apple", "black", 5000, 0.2, 2);
 
-var phoneArray = [samsungGalaxyS6, iPhone6s, samsungGalaxyA8, nokia5, huaweiP10, iPhoneX];
+var phoneArray = new Array(samsungGalaxyS6, iPhone6s, samsungGalaxyA8, nokia5, huaweiP10, iPhoneX);
 var phoneQuantity = phoneArray.length; 
 
 for (var i = 0; i < phoneQuantity; i++) {
