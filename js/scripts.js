@@ -24,36 +24,18 @@ Phone.prototype.checkHowManyLeft = function() {
 	}
 };
 
-var SamsungGalaxyS6 = new Phone("Samsung", "black", 1600, 0.4, 0);
+var samsungGalaxyS6 = new Phone("Samsung", "black", 1600, 0.4, 0);
 var iPhone6s = new Phone("Apple", "silver", 2200, 0.2, 10);
-var SamsungGalaxyA8 = new Phone("Samsung", "golden", 2100, 0.4, 15);
-var Nokia5 = new Phone("Nokia", "black", 780, 0.3, 0);
-var HuaweiP10 = new Phone("Huawei", "silver", 1750, 0.5, 50);
+var samsungGalaxyA8 = new Phone("Samsung", "golden", 2100, 0.4, 15);
+var nokia5 = new Phone("Nokia", "black", 780, 0.3, 0);
+var huaweiP10 = new Phone("Huawei", "silver", 1750, 0.5, 50);
 var iPhoneX = new Phone("Apple", "black", 5000, 0.2, 2);
 
-SamsungGalaxyS6.printInfo();
-iPhone6s.printInfo();
-SamsungGalaxyA8.printInfo();
-iPhoneX.printInfo();
-Nokia5.printInfo();
-HuaweiP10.printInfo();
+var phoneArray = [samsungGalaxyS6, iPhone6s, samsungGalaxyA8, nokia5, huaweiP10, iPhoneX];
+var phoneQuantity = phoneArray.length; 
 
-SamsungGalaxyS6.addBargainInfo();
-iPhone6s.addBargainInfo();
-Nokia5.addBargainInfo();
-HuaweiP10.addBargainInfo();
-iPhoneX.addBargainInfo();
-
-SamsungGalaxyS6.checkHowManyLeft();
-iPhone6s.checkHowManyLeft();
-iPhoneX.checkHowManyLeft();
-SamsungGalaxyA8.checkHowManyLeft();
-Nokia5.checkHowManyLeft();
-HuaweiP10.checkHowManyLeft();
-
-
-
-
-
-
-
+for (var i = 0; i < phoneQuantity; i++) {
+	phoneArray[i].printInfo();
+	phoneArray[i].addBargainInfo();
+	phoneArray[i].checkHowManyLeft();
+}
